@@ -36,17 +36,12 @@ fi
 
 eval set -- "$ARGS"
 
-DRY_RUN=
 CYGWIN_INSTALL="$PWD/cygwin"
 while true; do
     case "$1" in
         -i|--install-root)
             CYGWIN_INSTALL="$2"
             shift 2
-            ;;
-        -n|--dry-run)
-            DRY_RUN="yes"
-            shift
             ;;
         --)
             shift
