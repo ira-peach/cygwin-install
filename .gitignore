@@ -1,0 +1,4 @@
+*.swp
+cygwin*/
+*.log
+*.log.full
